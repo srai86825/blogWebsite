@@ -1,0 +1,13 @@
+<%- include("partials/header"); -%>
+    <div class="card shadow border p-4 m-4">
+        <h1>Compose Your Blogs</h1>
+        <form action="/compose" method="post">
+            <label>Title</label>
+            <input class="form-control" name="title" autocomplete="off">
+            <label>Post</label>
+            <textarea class="form-control" rows="7" name="content" autocomplete="off"></textarea>
+            <button type="submit" class="btn btn-primary mt-2">Compose</button>
+        </form>
+    </div>
+    
+<%- include("partials/footer"); -%>

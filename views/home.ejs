@@ -1,0 +1,13 @@
+<%- include("partials/header") -%>
+
+<div class="card shadow border p-3  home-section" style="width: 50%;">
+    <h1>Yours Blogs</h1><hr>
+    <% blogs.forEach(function(blog){ %>
+        <h3> <%= blog.db_title %> </h3>
+        <p><%= blog.db_content %> </p>
+        <hr>
+    <% }); %>
+    <button class="btn btn-primary"><a href="/compose" class="text-white text-decoration-none">Compose Blog</a></button>
+</div>
+
+<%- include("partials/footer") -%>
